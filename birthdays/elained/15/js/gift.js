@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         envelopeTop.classList.add("open");
 
         setTimeout(() => {
-            window.location = "/envelope.html";
+            window.location = "./envelope.html";
         }, "400");
     });
 });
