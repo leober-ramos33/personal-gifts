@@ -1,0 +1,14 @@
+main {
+    text-align: center;
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+p {
+    text-align: justify;
+}
+
+h5 {
+    font-weight: normal;
+}
