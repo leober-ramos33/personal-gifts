@@ -31,7 +31,7 @@ jobs:
 
             - name: Build
               run: |
-                  find public -name "index.html" -type f | xargs -I "{}" bash -c 'npx parcel build {} -d "$(dirname {} | sed "s/^public\//dist\//g")" --public-url "./"'
+                  find public -name "index.html" -type f | xargs -I "{}" bash -c 'npx parcel build {} -d "$(dirname {} | sed "s/^public\//dist\//g")" --no-source-maps --public-url "./"'
 
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@3.7.1
