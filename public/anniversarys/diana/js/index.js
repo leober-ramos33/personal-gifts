@@ -3,7 +3,8 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const monthCount = (12 - document.getElementsByClassName("month-disable").length) + 2;
+const monthCount =
+    12 - document.getElementsByClassName("month-disable").length + 2;
 const endDate = new Date(`${monthCount}/11/2021 00:00:00`);
 
 document.getElementById("month").innerHTML = monthCount - 1;
