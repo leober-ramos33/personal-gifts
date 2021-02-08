@@ -3,6 +3,10 @@
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
     "parcel": "^1.12.4",
-    "postcss": "^8.2.5"
+    "postcss": "^8.2.5",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "format": "prettier --write ."
   }
 }
