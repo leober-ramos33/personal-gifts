@@ -11,10 +11,7 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex: 0 1 auto;
-}
-
-footer {
-    flex: 0 1 auto;
+img {
+    max-width: auto;
+    height: auto;
 }
