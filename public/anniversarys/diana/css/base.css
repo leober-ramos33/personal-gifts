@@ -16,3 +16,13 @@ img {
     max-width: auto;
     height: auto;
 }
+
+.rounded {
+    border-radius: 10px;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

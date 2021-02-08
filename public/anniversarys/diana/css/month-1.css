@@ -1,3 +1,61 @@
 body {
     justify-content: center;
+    background-color: #dfdbe5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23ea8e96' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+body > * {
+    margin: 10px;
+    border-radius: 15px;
+    padding: 2.5em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+body > *:hover {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 6em;
+    background: -webkit-linear-gradient(#3494e6, #ec6ead);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+img {
+    max-width: 75%;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 1.3em;
+        margin-left: 0;
+    }
+
+    h3 {
+        font-size: 2.3em;
+    }
+
+    img {
+        max-width: auto;
+    }
 }
