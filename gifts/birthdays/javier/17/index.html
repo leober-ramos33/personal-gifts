@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline'"
+        />
+
+        <!-- Robots tags -->
+        <meta name="robots" content="noindex, nofollow, noarchive" />
+
+        <title>Caraechola te amo</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/utils.css" />
+        <link rel="stylesheet" href="css/spiderman.css" />
+    </head>
+
+    <body>
+        <section class="spiderman-wrapper">
+            <div id="spiderman">
+                <div class="head">
+                    <div class="eye-left"></div>
+                    <div class="eye-right"></div>
+                </div>
+                <div class="body">
+                    <div class="spider"></div>
+                    <div class="arm-left"></div>
+                    <div class="arm-right"></div>
+                </div>
+                <div class="legs">
+                    <div class="boot-left"></div>
+                    <div class="boot-right"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reactor-container">
+            <div class="reactor-container-inner circle abs-center"></div>
+            <div class="tunnel circle abs-center"></div>
+            <div class="core-wrapper circle abs-center"></div>
+            <div class="core-outer circle abs-center"></div>
+            <div class="core-inner circle abs-center"></div>
+            <div class="coil-container">
+                <div class="coil coil-1"></div>
+                <div class="coil coil-2"></div>
+                <div class="coil coil-3"></div>
+                <div class="coil coil-4"></div>
+                <div class="coil coil-5"></div>
+                <div class="coil coil-6"></div>
+                <div class="coil coil-7"></div>
+                <div class="coil coil-8"></div>
+            </div>
+        </section>
+
+        <div class="text-center">
+            <p
+                class="mt-6 uppercase text-gray-800"
+                style="
+                    letter-spacing: 0.25rem;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                "
+            >
+                Stark tiene una misión para tí,
+            </p>
+
+            <p
+                class="mt-2"
+                style="
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                    font-weight: 800;
+                    letter-spacing: 0.5rem;
+                "
+            >
+                Javier Parker
+            </p>
+        </div>
+
+        <a href="mission.html" class="hidden"></a>
+
+        <script>
+            document
+                .getElementsByClassName("coil-container")[0]
+                .addEventListener("click", () => {
+                    setTimeout(() => {
+                        window.location = "./mission.html";
+                    }, "400");
+                });
+        </script>
+    </body>
+</html>
