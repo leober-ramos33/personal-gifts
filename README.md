@@ -7,7 +7,8 @@
 Not useful for you. It's just the digital gifts that I have given to my friends.
 
 Gifts list:
-* Birthday
-* Anniversary
-* Month Anniversary
-* Holidays (Like Valentine's Day)
+
+-   Birthday
+-   Anniversary
+-   Month Anniversary
+-   Holidays (Like Valentine's Day)
