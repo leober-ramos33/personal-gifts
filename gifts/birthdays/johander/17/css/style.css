@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #277aff;
+    --secondary: #f45c43;
+}
+
+body {
+    background: linear-gradient(to left, #eb3349, #f45c43);
+    font-family: "Marvel", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-subtitle {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0.5px 1px #2a2a2a;
+}
+
+.header-title {
+    letter-spacing: -0.025em;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+}
+
+.shield-circle {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.shield-outer-lv3 {
+    background-image: linear-gradient(#870000, #ff4040, #870000);
+    height: 260px;
+    width: 260px;
+    animation: turning 8s infinite linear;
+}
+
+@keyframes turning {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.shield-outer-lv2 {
+    background: #fff;
+    background-image: linear-gradient(#dbd9d9, #fafafa, #dbd9d9);
+    height: 210px;
+    width: 210px;
+}
+
+.shield-outer-lv1 {
+    background-image: linear-gradient(#870000, #ff4040, #870000);
+    height: 150px;
+    width: 150px;
+}
+
+.shield-center {
+    background-image: linear-gradient(#0846a8, #277aff, #0846a8);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.shield-arrow {
+    border-top: 35px solid #ede8e8;
+    border-bottom: 48px solid rgba(0, 0, 0, 0);
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.shield-top {
+    top: 35px;
+    left: 2px;
+}
+
+.shield-left {
+    transform: rotate(72deg);
+    top: 16px;
+    left: -24px;
+}
+
+.shield-right {
+    transform: rotate(-72deg);
+    top: 16px;
+    left: 25px;
+}
+
+main {
+    color: #fff;
+    padding: 1.25em;
+    background: #fff;
+    color: rgb(75, 85, 99);
+    text-align: justify;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+footer {
+    width: 100%;
+    display: block;
+    bottom: 0;
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background-color: #2a2a2a;
+}
+
+footer > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer svg {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
