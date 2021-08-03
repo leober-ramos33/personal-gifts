@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             http-equiv="Content-Security-Policy"
-            content="style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self'; font-src fonts.gstatic.com; frame-src www.youtube.com"
+            content="style-src 'self' 'unsafe-inline' fonts.googleapis.com unpkg.com; img-src 'self' data: i.ytimg.com; font-src fonts.gstatic.com; frame-src www.youtube-nocookie.com; script-src unpkg.com"
         />
 
         <title>Felices #17</title>
@@ -20,6 +20,10 @@
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Marvel&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/lite-youtube-embed@0.2.0/src/lite-yt-embed.css"
         />
 
         <!--[if lt IE 9]>
@@ -123,17 +127,16 @@
 
             <br />
 
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/1-XhIhNWqgI"
-                title="Father and Son"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                style="display: block; margin-left: auto; margin-right: auto"
-                allowfullscreen
-                loading="lazy"
-            ></iframe>
+            <lite-youtube
+                videoid="1-XhIhNWqgI"
+                playlabel="Father and Son"
+                style="
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 0.25rem;
+                "
+            ></lite-youtube>
 
             <br />
 
@@ -335,17 +338,16 @@
 
             <br />
 
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/koYgMB7tm88"
-                title="Tony Stark - Legado"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="display: block; margin-left: auto; margin-right: auto"
-                loading="lazy"
-            ></iframe>
+            <lite-youtube
+                videoid="koYgMB7tm88"
+                playlabel="Tony Stark - Legado"
+                style="
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 0.25rem;
+                "
+            ></lite-youtube>
         </main>
 
         <section>
@@ -384,5 +386,7 @@
                 </p>
             </footer>
         </section>
+
+        <script src="https://unpkg.com/lite-youtube-embed@0.2.0/src/lite-yt-embed.js"></script>
     </body>
 </html>
